@@ -1,0 +1,59 @@
+algorithm iterative_for 
+
+
+
+var
+
+ch:string;
+i,n:integer;
+
+
+
+
+begin
+
+{question1}
+i=length(ch)
+repeat
+read(ch)
+until ch[i]='.'
+writeln(ch)
+{question1}
+
+
+{question2}
+write length(ch);
+{question2}
+
+
+{question3}
+
+ 
+n=1
+
+for i from 1 to length(ch)
+
+x=pos(' ',ch)
+n=n+x
+write(n)
+{question3}
+
+
+
+
+{question4}
+
+v=0
+
+
+for i from 1 to length(ch)
+if ch[i] in ['a','e','i','o','u','y']
+v:=v+1
+write(v)
+
+{question4}
+
+
+
+
+
